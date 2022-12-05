@@ -17,19 +17,19 @@ public class Main
                 System.out.println("adatok[1]: " + adatok[1]);
                 System.out.println("adatok[2]: " + adatok[2]);
                 System.out.println("adatok[3]: " + adatok[3]);
-                if (adatok[0].equals("T")) {
-                    Eteto tapAdagolo = new TapAdagolo(
+                if (adatok[0].equals("V")) {
+                    Eteto vitaminAdagolo = new VitaminAdagolo(
                             Integer.parseInt(adatok[1]),
                             Integer.parseInt(adatok[2]),
                             Integer.parseInt(adatok[3]),
                             Integer.parseInt(adatok[4]));
-                    etetoModul.telepit(tapAdagolo);
+                    etetoModul.telepit(vitaminAdagolo);
                 } else {
-                    Eteto vitaminAdagolo = new VitaminAdagolo(
+                    Eteto tapAdagolo = new TapAdagolo(
                             Integer.parseInt(adatok[1]),
                             Integer.parseInt(adatok[2]),
                             Formatum.valueOf(adatok[3]));
-                    etetoModul.telepit(vitaminAdagolo);
+                    etetoModul.telepit(tapAdagolo);
                 }
             }
             myReader.close();
